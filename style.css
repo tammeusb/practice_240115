@@ -1,0 +1,106 @@
+html, body {
+    background-color: peachpuff;
+    text-align: center;
+}
+
+body div {
+    border: 2px dotted chocolate;
+}
+
+.flex-container {
+    display: flex;
+    width: 200px;
+}
+
+.flex-container div {
+    align-items: center;
+}
+
+.flex-container div.one {
+    flex-shrink: 2;
+}
+
+.flex-container div.two {
+    flex-grow: 1;
+}
+
+.flex-container div.three {
+    flex-grow: 1;
+}
+
+.navbar {
+    margin: 50px;
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    padding: 5px;
+    justify-content: space-around;
+}
+
+.navbar div {
+    border-radius: 10px;
+    background-color: azure;
+}
+
+.navbar .small_logo {
+    width: 50px;
+    flex-shrink: 0;
+}
+
+.navbar .big_logo {
+    width: 300px;
+    flex: 2;
+}
+
+.home, .about, .contact {
+    flex: 1;
+}
+
+.sky {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: azure;
+    max-width: 1000px;
+}
+
+.cloud {
+    height: 100px;
+    background-color: slategray;
+}
+
+.rain-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 5px;
+}
+
+.rain {
+    width: 80px;
+    flex: 1;
+    background-color: lightblue;
+}
+
+.rain.one {
+    margin-left: 50px;
+    align-self: flex-start;
+}
+
+.rain.two {
+    align-self: center;
+}
+
+.rain.three {
+    align-self: flex-end;
+}
+
+.rain.four {
+    margin-left: auto;
+    margin-right: 100px;
+}
+
+.grass {
+    height: 50px;
+    background-color: darkgreen;
+}
